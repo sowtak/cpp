@@ -1,8 +1,17 @@
 import React from 'react';
+import {AppBar} from "@mui/material";
+import {NavBar} from "./components/NavBar";
+import {Route, Routes} from "react-router-dom";
+import {Home} from "./pages/Home";
 
 function App() {
   return (
-      <h1>App</h1>
+      <>
+          <NavBar/>
+          <Routes>
+              <Route path='/' element={<Home/>}/>
+          </Routes>
+      </>
   );
 }
 
