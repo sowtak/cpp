@@ -1,6 +1,5 @@
 #include <iostream>
 #include <iomanip>
-#include <bitset>
 #include <vector>
 #include <map>
 #include <unordered_map>
@@ -20,9 +19,10 @@ using namespace std;
 const int MAX = 1000000007;
 const int MAX2 = 998244353;
 
-
+ll height, width, stone_width;
+ll ans;
 int main() {
-
-
-
+  cin>>height>>width>>stone_width;
+  ans=(((height-1)/stone_width+1) * ((width-1)/stone_width+1));
+  cout<<ans<<endl;
 }

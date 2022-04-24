@@ -1,6 +1,5 @@
 #include <iostream>
 #include <iomanip>
-#include <bitset>
 #include <vector>
 #include <map>
 #include <unordered_map>
@@ -20,9 +19,12 @@ using namespace std;
 const int MAX = 1000000007;
 const int MAX2 = 998244353;
 
-
+int N, X;
+int L[101];
 int main() {
-
-
+  int ans = 0;
+  cin>>N>>X;
+  vector<int> d(N), sum(N+1);  
+  rep(i,0)
 
 }
