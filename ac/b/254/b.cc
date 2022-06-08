@@ -24,8 +24,8 @@ const int MOD = 1000000007;
 const int MOD2 = 998244353;
 const int MAX = 2147483647;
 
-
+int N;
 int main() {
-
+  cin>>N;
 
 }

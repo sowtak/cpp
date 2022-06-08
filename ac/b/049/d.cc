@@ -24,8 +24,20 @@ const int MOD = 1000000007;
 const int MOD2 = 998244353;
 const int MAX = 2147483647;
 
+int N,K,L, p,q,r,s;
+vector<vector<int>>road, railway;
+
 
 int main() {
+  cin>>N>>K>>L;
+  
+  rep(i,0,K) {
+    cin>>p>>q;p--,q--;
+    road[p][q]=road[q][p]=1;
+  }
 
-
+  rep(i,0,L) {
+    cin>>r>>s;r--,s--;
+    road[r][s]=road[s][r]=1;
+  }
 }

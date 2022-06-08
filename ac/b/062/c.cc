@@ -5,12 +5,10 @@
 #include <map>
 #include <unordered_map>
 #include <queue>
-#include <stack>
+#include <dequeue>
 #include <unordered_set>
 #include <set>
 #include <algorithm>
-#include <functional>
-#include <numeric>
 #include <cmath>
 #include <cstring>
 #define ll long long
@@ -20,12 +18,13 @@ template <typename T> inline bool chmin(T &a, T &b) {if (a>b){a=b; return true;}
 template <typename T> inline bool chmax(T &a, T &b) {if (a<b){a=b; return true;} else return false;}
 using namespace std;
 
-const int MOD = 1000000007;
-const int MOD2 = 998244353;
-const int MAX = 2147483647;
+const int MAX = 1000000007;
+const int MAX2 = 998244353;
 
-
+int H,W;
 int main() {
+  cin>>H>>W;
+  
 
 
 }

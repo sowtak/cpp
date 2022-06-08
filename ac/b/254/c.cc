@@ -24,8 +24,32 @@ const int MOD = 1000000007;
 const int MOD2 = 998244353;
 const int MAX = 2147483647;
 
-
+int N,K;
 int main() {
+  array<int, 200000> a,b;
+  cin>>N>>K;rep(i,0,N)cin>>a[i];
+  
+  if(is_sorted(a.begin(), a.end())) {
+    cout<<"Yes"<<endl;
+    return 0;
+  } else {
+    while(!is_sorted(a.begin(), a.end())) {
+      b=a;
+      rep(i,0,N-K) {
+        if(a[i]>a[i+K]) 
+          swap(a[i], a[i+K]);
+      }
+      if(b==a)
+        break;
+    }
+  }
 
+  rep(i,0,N)cout<<a[i]<<' ';
+  cout<<endl;
 
+  if(is_sorted(a.begin(), a.end())) {
+    cout<<"Yes" <<endl;
+  } else {
+    cout<<"No"<<endl;
+  }
 }

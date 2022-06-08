@@ -5,12 +5,9 @@
 #include <map>
 #include <unordered_map>
 #include <queue>
-#include <stack>
 #include <unordered_set>
 #include <set>
 #include <algorithm>
-#include <functional>
-#include <numeric>
 #include <cmath>
 #include <cstring>
 #define ll long long
@@ -24,8 +21,9 @@ const int MOD = 1000000007;
 const int MOD2 = 998244353;
 const int MAX = 2147483647;
 
-
+int a,b,c;
+string S;
 int main() {
-
-
+  cin>>a>>b>>c;
+  cout<<(((b>=a && b<=c) || (b>=c && b<=a)) ? "Yes" : "No")<<endl;
 }

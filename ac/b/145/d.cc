@@ -5,12 +5,9 @@
 #include <map>
 #include <unordered_map>
 #include <queue>
-#include <stack>
 #include <unordered_set>
 #include <set>
 #include <algorithm>
-#include <functional>
-#include <numeric>
 #include <cmath>
 #include <cstring>
 #define ll long long
@@ -24,8 +21,8 @@ const int MOD = 1000000007;
 const int MOD2 = 998244353;
 const int MAX = 2147483647;
 
-
+int X,Y;
 int main() {
-
-
+  cin>>X>>Y;
+  
 }

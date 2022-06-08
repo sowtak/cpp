@@ -5,12 +5,9 @@
 #include <map>
 #include <unordered_map>
 #include <queue>
-#include <stack>
 #include <unordered_set>
 #include <set>
 #include <algorithm>
-#include <functional>
-#include <numeric>
 #include <cmath>
 #include <cstring>
 #define ll long long
@@ -24,8 +21,12 @@ const int MOD = 1000000007;
 const int MOD2 = 998244353;
 const int MAX = 2147483647;
 
-
+int N,A,B;
+ll sum;
 int main() {
-
-
+  cin>>N>>A>>B;
+  rep(i,1,N+1) {
+    if(i%A!=0 && i%B!=0)sum+=i;
+  }
+  cout<<sum<<endl;
 }
